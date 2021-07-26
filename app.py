@@ -1,6 +1,6 @@
 from flask import Flask,jsonify
-from GPU3 import get_gpus
-from Apagar import 
+from GPU3 import *
+from methods import *
 
 app=Flask(__name__)
 
@@ -8,7 +8,6 @@ app=Flask(__name__)
 @app.route("/ping")
 
 @app.route('/gpus',methods=["GET"])
-
 def GPUS():
     gpus=get_gpus()
     
